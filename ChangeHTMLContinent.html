@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Change Div Content</title>
+    
+    <link rel="stylesheet" type="text/css" href="CSS for all/style.css">
+
+    <style>
+       .bluebox{
+           background-color: blue;
+           size: 100px;
+           height: 100px;
+           width: auto;
+           color: whitesmoke;
+       }
+
+       .yellowbox{
+           background-color: turquoise;
+           line-height: 100px;
+           width: auto;
+           color: white;
+       }
+
+       .pinkbox{
+                background-color: violet;
+                color: white;
+                height: 100px;
+                width: auto;
+
+       }
+
+       .greenbox{
+                background-color: rgb(132, 223, 132);
+                color: ivory;
+                height: 100px;
+                width: auto;
+
+
+       }
+
+       .redbox{
+
+        background-color: red;
+        color: royalblue;
+        height: 100px;
+        width: auto;
+       }
+        .PROJECTS{
+            background-color: sandybrown;
+            color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bluebox">
+
+        <p>CHARITY PROJECTS</p>
+
+    </div>
+    <div class="redbox" id="widows">
+        <p>WIDOWS</p>
+
+    </div>
+
+    <div class="yellowbox" id="stranger">
+        <p>STRANGERS</p>
+
+    </div>
+    <div class="greenbox" id="fatherless">
+        <p>FATHERLESS</p>
+
+    </div>
+    
+    <div class="pinkbox" id="levites">
+        <p>LEVITES</p>
+
+    </div>
+    <button id="button1">LEVITES</button>
+    <button id="button2">FATHERLESS</button>
+    <button id="button3">STRANGERS</button>
+    <button id="button4">WIDOWS</button>
+    <script>
+        document.getElementById("button1").onclick=function() 
+        {
+         document.getElementById("levites").innerHTML = "<p>Hello Brethren</p>";
+            
+        }
+       
+        document.getElementById("button2").onclick=function() 
+        {
+           document.getElementById("fatherless").innerHTML = "<p> You are not Forgotten!</p>";
+        }
+        document.getElementById("button3").onclick=function()
+        {
+            document.getElementById("stranger").innerHTML = "<ul><li>Locals</li><li>Natives</li><li>Hispanics</li><li>African</li><li>Europeans</li></ul>";
+        }
+        document.getElementById("button4").onclick=function()
+        {
+            document.getElementById("widows").innerHTML = "<ul><li>Houses</li><li>Lands</li><li>Estates</li><li>Income</li><li>Legacy</li></ul>";
+        }
+    </script>
+</body>
+</html>

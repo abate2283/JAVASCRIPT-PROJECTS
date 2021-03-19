@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Creation</title>
+<body>
+  <form method="GET">
+    <input type="text" name="email" placeholder="E-mail" size="40px" maxlength="100">
+    <input type="password" name="password" placeholder="Password" size="40px"> 
+    <input type="submit" value="login">
+  </form> 
+  <p>
+      <button onmouseover="alert('click me!')" onclick="alert('You are welcome here!')">Click me!</button>
+  </p>
+  <button id="button2">Click me too!</button>
+  <script>
+      document.getElementById("button2").onclick=function(){alert("Are you sure? ")}
+      
+  </script>
+</body>
+</html>
